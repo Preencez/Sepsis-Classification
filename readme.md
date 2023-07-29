@@ -34,6 +34,8 @@ The evaluation phase considered the imbalanced dataset, utilizing the F1 score a
 Deployment
 The project was deployed using FastAPI to create a web interface for interacting with the sepsis classification model. Additionally, a Docker containerized deployment option was provided. The Streamlit application offers further exploration and analysis of the dataset.
 
+
+![FastAPi](https://th.bing.com/th/id/R.b0d43e26e4726845a8aea3f2acbc6631?rik=0%2fEo8SO3kdvnXw&pid=ImgRaw&r=0)
 Future Work
 For future work, incorporating clustering algorithms could be a valuable addition to the sepsis identification and classification process, helping to group similar patient data based on patterns and similarities.
 
@@ -44,5 +46,5 @@ Faith Berida
 Data Analyst at Azubi Africa
 
 LinkedIn
-medium
+medium (https://princesstoy07.medium.com/)
 website 
