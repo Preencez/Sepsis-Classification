@@ -28,8 +28,6 @@ The project evaluated several machine learning models, considering the imbalance
 Evaluation
 The evaluation phase considered the imbalanced dataset, utilizing the F1 score as a balanced measure of accuracy and the AUC score to assess the models' ability to distinguish between positive and negative cases.a comparison of the models was also done to know the best model to use for classification
 
-![scores]("D:\Projects\Sepsis Classification\score for sepsis analysis.jpg")
-
 
 Deployment
 The project was deployed using FastAPI to create a web interface for interacting with the sepsis classification model. Additionally, a Docker containerized deployment option was provided. The Streamlit application offers further exploration and analysis of the dataset.
@@ -45,6 +43,6 @@ For any questions or inquiries regarding the project, please feel free to contac
 Faith Berida
 Data Analyst at Azubi Africa
 
-LinkedIn
+LinkedIn:https://www.linkedin.com/in/faith-toyin-berida-513097a2
 medium (https://princesstoy07.medium.com/)
 website 
