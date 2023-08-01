@@ -1,20 +1,17 @@
-# Dockerfile
-
-# Use the official Python image as the base image
-FROM python:3.9-slim
+# Use an official Python runtime as a base image
+FROM python:3.8-slim
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the FastAPI app and ML components to the container
-COPY fastapi_app.py /app/
-COPY ML_components /app/ML_components
+# Copy the requirements.txt file into the container
+COPY requirements.txt .
 
-# Install dependencies
-RUN pip install fastapi uvicorn joblib pandas scikit-learn matplotlib
+# Install the required Python packages
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the port on which FastAPI will run (change if needed)
-EXPOSE 8000
+# Copy the rest of the application code into the container
+COPY . .
 
-# Command to run the FastAPI application with Uvicorn
-CMD ["uvicorn", "fastapi_app:app", "--host", "0.0.0.0", "--port", "8000"]
+# Command to run your application (modify this based on your app)
+CMD ["python", "streamlit_app.py"]
