@@ -42,10 +42,14 @@ def predict_sepsis(input_data):
     return output_df, probabilities
 
 # Create a Streamlit app
+# Create a Streamlit app
 def main():
     st.title('Sepsis Prediction App')
 
-    #st.image("Strealit_.jpg")
+    # Display the image using HTML
+    image_url = "https://lh3.googleusercontent.com/-UU_-cM2FZnI/YLgc3z-EFCI/AAAAAAAAAuo/sORie7aJNgsM8UY7_qAUTZUSeSxKtA7UQCLcBGAsYHQ/s16000/streamlit_log.png"
+    st.markdown(f'<img src="{image_url}" alt="Streamlit Logo" style="width: 300px;">', unsafe_allow_html=True)
+
 
     # How to use
     st.sidebar.title('How to Use')
