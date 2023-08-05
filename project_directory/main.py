@@ -4,6 +4,7 @@ import joblib
 import pandas as pd
 import numpy as np
 import uvicorn
+from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
@@ -63,6 +64,7 @@ def predict_sepsis_endpoint(data: PatientData):
 
     result = {'predicted_sepsis': sepsis_status, 'statement': statement, 'user_input_statement': user_input_statement, 'input_data_df': output_df.to_dict('records')}
     return result
-
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    import uvicorn
+
+    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
